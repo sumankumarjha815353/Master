@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+ .fixed-footer
+	{
+		display: block;
+		color: white;
+		text-align: center;
+        bottom: 0;
+		background-color:#333;
+		padding: 15px 14px;
+    } 
+
+li {
+    float: left;
+	}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+	}
+
+li a:hover:not(.active) {
+							background-color: green;
+						}
+
+.active {
+    background-color: green;
+}
+</style>
+<title>www.Tms/feedback.com</title>
+</head>
+<body link="green" vlink="darkred" alink="blue">
+
+<ul>
+ <li><a href="menu1.html">Home</a></li>
+  <li><a href="login1.html">Login</a></li>
+   <li><a href="booking.html">Booking</a></li>
+   <li><a href="trackorders.html">Track Orders</a></li>
+    <li><a href="delivery.html">Delivery Status</a></li>
+   <li><a class="active" href="feedback1.html">Feedback</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+</ul>
+
+<div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:540px;">
+<fieldset>
+		<legend> <center> FEEDBACK FORM </center></legend>
+			<form  method = 'post' action = "Connectivity.php">
+			<marquee><h3> <a href> Welcome to feedback form. We're happy to have your Feedback </a></h3></marquee>
+		      <center/>
+	<table>
+			<caption><h1>Feedback Us </h1></caption><b/>
+		<tr>
+			<td ALIGN="CENTER"> NAME:</br></br></td>
+			<td><input type ="text" name= "name" size="25" placeholder="Enter your name"> </br></br></td>
+		</tr>
+		
+		<tr>
+			<td ALIGN="CENTER"> EMAIL:</br></br></td>
+			<td> <input type ="email" name= "email" size="25" placeholder=" Enter your Email"> </br></br></td>
+		</tr>
+		
+		<tr>
+			<td ALIGN="CENTER"> PHONE:</br></br></td>
+			<td><input type ="text" name= "phone" size="25"  maxlength="10" placeholder="Enter your Phone"> </br></br></td>
+		</tr>
+		
+		<tr>
+			<td ALIGN="CENTER"> REMARKS:</br></td>
+			<td><textarea name="remarks" rows="10" cols="30" placeholder="please type your comments...."></textarea></br></td>
+		</tr>
+		
+	</table>
+		
+			<center><input type = 'submit' value="SUBMIT">
+			<input type="image" src="photos/SUBMIT.jpg" alt="Submit" width="60" height="60">
+			<input type = 'Reset' value="RESET"></center>
+			<button type="button" onclick="alert('Please enter the specified data such as NAME,EMAIL,PHONE & REMARKS for further info contact at sumanjhadeo@gmail.com')">Help!</button>
+				
+				
+				
+
+	</fieldset>
+</form>
+</div>
+<div class="fixed-footer">
+       <div class="container"> Copyright &copy; 2018 Shiv Shankar Roadways, Madhupur
+		<text align="left"> Contact No- 9431577918</div>        
+</div>
+</body>
+</html>

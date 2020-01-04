@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>www.Tms/delivery.com</title>
+<style>
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+ .fixed-footer
+	{
+		display: block;
+		color: white;
+		text-align: center;
+        bottom: 0;
+		background-color:#333;
+		padding: 15px 14px;
+    } 
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: green;
+}
+
+.active {
+    background-color: green;
+}
+</style>
+</head>
+<body>
+
+<ul>
+ <li><a href="menu1.html">Home</a></li>
+  <li><a href="login1.html">Login</a></li>
+   <li><a href="booking.html">Booking</a></li>
+   <li><a href="trackorders.html">Track Orders</a></li>
+    <li><a class="active"href="delivery.html">Delivery Status</a></li>
+   <li><a href="feedback1.html">Feedback</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+</ul>
+<div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
+<body>
+ <h2> <center>Enter the Details to Track Your Orders</center></h2>
+ <form  method = 'post' action = "Delivery.php"><BR>
+<table align="center">
+<tr>
+<td> <h4> Order Date </td><td></h4> <input Type="date" name="orderdate"></td>
+<td> <h4> Mobile No. </td><td></h4> <input type="text"name="mobileno" size="12"></td>
+</tr>
+</table>
+<center> <input type="submit" value="Submit Details"><center>
+</div>
+<div class="fixed-footer">
+        <div class="container">Copyright &copy; 2016 Your Company</div>        
+</div>
+</form>
+</body>
+</html>

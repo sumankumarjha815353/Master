@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>www.Tms/login.com</title>
+<style>
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding:0px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	text-align:center;
+}
+.fixed-footer
+	{
+		display: block;
+		color: white;
+		text-align: center;
+        bottom: 0;
+		background-color:#333;
+		padding: 15px 14px;
+    } 
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: green;
+}
+
+.active {
+    background-color: green;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="menu1.html">Home</a></li>
+  <li><a  class="active"  href="login1.html">Login</a></li>
+   <li><a href="booking.html">Booking</a></li>
+   <li><a href="trackorders.html">Track Orders</a></li>
+    <li><a href="delivery.html">Delivery Status</a></li>
+   <li><a href="feedback1.html">Feedback</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+</ul>
+
+<div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:517px;">
+<fieldset>
+		<center></center><legend>LOGIN FORM </legend></center>
+		<form  method = 'post' action ="Connectlogin.php" autocomplete="on">
+		<marquee><h3/>Welcome to login form.Please login yourself.</marquee>
+		<CENTER/>
+	<Table  WIDTH="35%">
+	<caption><h1> Login Yourself </h1></caption>
+												
+		<tr>
+			<td ALIGN="CENTER"><b>USERNAME:</b></br></br></td>	    
+			<td><input type ="text" name= "Username" size="25"> </br></br></td>
+		</tr>
+		<tr>
+			<td ALIGN="CENTER"><b>PASSWORD:</b></br></br></td>
+			<td><input type ="password" name= "password" size="25" style="text"> </br></br></td>
+		</tr>		
+	</Table>	
+				<input type = 'submit' value="SUBMIT">
+				<input type = 'Reset' value="RESET">	
+	</form>
+	<br>
+	<br>
+	<br>
+</fieldset>	
+</div>
+<div class="fixed-footer">
+        <div class="container"> Copyright &copy; 2018 Shiv Shankar Roadways, Madhupur
+		<text align="left"> Contact No- 9431577918</div>        
+</div>
+</body>
+</html>
