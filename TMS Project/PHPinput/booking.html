@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+ .fixed-footer
+	{
+		display: block;
+		color: white;
+		text-align: center;
+        bottom: 0;
+		background-color:#333;
+		padding: 15px 14px;
+    } 
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: green;
+}
+
+.active {
+    background-color: green;
+}
+</style>
+<title>www.booking.com</title>
+</head>
+<body link="green" vlink="darkred" alink="blue">
+			<ul>
+			<li><a href="menu1.html">Home</a></li>
+			<li><a href="login1.html">Login</a></li>
+			<li><a class="active"href="booking.html">Booking</a></li>
+			<li><a href="trackorders.html">Track Orders</a></li>
+			<li><a href="delivery.html">Delivery Status</a></li>
+			<li><a href="feedback1.html">Feedback</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+<div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
+		<table align="center">
+		<form  method = 'post' action = "Booking.php"><BR>
+				<marquee> <h3> Welcome to the Shiv Shankar Roadways. Enter the details for Booking </h3></marquee>
+				<Caption><h1> Booking Details<hr/></h1></caption>
+				<tr>
+				<td align="center"> Source 
+					<input type="text" size="20" name="source" placeholder="Enter Source Place">
+					Destination 
+					<input type="text" size="20" name="destination" placeholder="Enter Distination Place"><br><br>
+				</td>
+				<br><br>
+				</tr>
+				<tr>
+					<td align="center">Goods Quantity
+					<input type="text" size="15" name="goodsquantity"placeholder="Enter Goods Quantity"> 
+					Units <input type="text" size="10"name="units" placeholder="kg/Liter/ton">	<br><br></td>
+					
+				</tr>
+			
+				<tr>
+				
+				<td align="center">Order Date 
+					<input type="date" name="orderdate"<br><br>
+				</td>
+				</tr> 
+				<tr>
+				<td align="center">Phone Number
+					<input type="number" size="20" name="phone"placeholder="Enter Contact No."><br><br>
+				</td>
+				</tr>
+				<tr>
+				<td align="center"><input type = 'submit' value="SUBMIT">
+				<input type ='Reset' value="RESET" name="RESET"></center></td>
+				</tr>
+				<tr>
+				<td align="center"><button type="button" onclick="alert('Please enter the specified data such as SOURCE,DESTINATION,GOODS QUENTITY,UNITS,LOADING DATE for further info contact at sumanjhadeo@gmail.com')">Help!</button></td>
+				</tr>
+		
+		</form>
+		</table>
+</div>
+<div class="fixed-footer">
+        <div class="container">Copyright &copy; 2016 Your Company</div>        
+</div>
+</body>
+</html>		
